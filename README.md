@@ -1,4 +1,4 @@
-# FormFiels Exercise
+# FormField & Input validation - Exercise
 
 ![logo_app_akadfemie](md_assets/app_akademie_logo.png)
 
