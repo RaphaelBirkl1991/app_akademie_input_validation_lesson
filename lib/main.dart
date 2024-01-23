@@ -35,7 +35,14 @@ class _MainAppState extends State<MainApp> {
                   TextFormField(
                     initialValue: "Empty",
                     validator: (value) {
-                      return "Aua Fehler >.<";
+                      final hasMinimumLength =
+                          value != null && value.length >= 6;
+                      if (hasMinimumLength) {
+                        return null;
+                      } else {
+                        return "Minimum Length not reached";
+                      }
+                      return null;
                     },
                     onChanged: onChangedFunction,
                   ),
